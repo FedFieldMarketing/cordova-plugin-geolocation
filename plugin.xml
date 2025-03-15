@@ -107,7 +107,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <string>$LOCATION_WHENINUSE_USAGE_DESCRIPTION</string>
         </config-file>
         
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
             <string>$LOCATION_WHENINUSE_USAGE_DESCRIPTION</string>
         </config-file>
 
