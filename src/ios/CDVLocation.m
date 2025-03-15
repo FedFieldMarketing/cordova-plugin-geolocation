@@ -122,10 +122,10 @@
             strongSelf->__highAccuracyEnabled = enableHighAccuracy;
             if([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationWhenInUseUsageDescription"]){
                 [strongSelf.locationManager requestWhenInUseAuthorization];
-            } else if([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationAlwaysUsageDescription"]) {
+            } else if([[NSBundle mainBundle] objectForInfoDictionaryKey:@"NSLocationAlwaysAndWhenInUseUsageDescription"]) {
                 [strongSelf.locationManager  requestAlwaysAuthorization];
             } else {
-                NSLog(@"[Warning] No NSLocationAlwaysUsageDescription or NSLocationWhenInUseUsageDescription key is defined in the Info.plist file.");
+                NSLog(@"[Warning] No NSLocationAlwaysAndWhenInUseUsageDescription or NSLocationWhenInUseUsageDescription key is defined in the Info.plist file.");
             }
             return;
         }
